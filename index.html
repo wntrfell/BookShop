@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Книжковий Світ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Книжковий Світ</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <aside class="filters">
+            <h2>Фільтри</h2>
+            <div class="filter-group">
+                <h3>Жанри</h3>
+                <button class="filter-button active" data-filter="all">Всі</button>
+                <button class="filter-button" data-filter="fantasy">Фантастика</button>
+                <button class="filter-button" data-filter="science">Наука</button>
+                <button class="filter-button" data-filter="history">Історія</button>
+                <button class="filter-button" data-filter="fiction">Художня література</button>
+                <button class="filter-button" data-filter="romance">Романтика</button>
+                <button class="filter-button" data-filter="thriller">Трилер</button>
+                <button class="filter-button" data-filter="philosophy">Філософія</button>
+                <button class="filter-button" data-filter="science-fiction">Наукова фантастика</button>
+                <button class="filter-button" data-filter="detective">Детектив</button>
+                <button class="filter-button" data-filter="biography">Біографія</button>
+                <button class="filter-button" data-filter="adventure">Пригоди</button>
+                <button class="filter-button" data-filter="poetry">Поезія</button>
+                <button class="filter-button" data-filter="children">Дитяча література</button>
+                <button class="filter-button" data-filter="psychology">Психологія</button>
+            </div>
+        </aside>
+
+        <div class="content">
+            <section class="book-cards">
+                <!-- Тут буде список книжок -->
+            </section>
+
+            <div id="pagination-container" class="pagination-container"></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Книжковий Світ. Усі права захищено.</p>
+        </div>
+    </footer>
+
+    <div id="subscribe-popup" class="subscribe-popup">
+        <div class="popup-content">
+            <h3>Підпишіться на наші новини!</h3>
+            <p>Отримуйте найсвіжіші оновлення та ексклюзивні пропозиції.</p>
+            <div class="popup-buttons">
+                <button id="accept-subscribe" class="btn primary">Так, підписатись!</button>
+                <button id="decline-subscribe" class="btn secondary">Ні, дякую</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="ad-modal" class="ad-modal">
+        <div class="ad-modal-content">
+            <h3>Гаряча пропозиція!</h3>
+            <p>Отримайте <strong>-20%</strong> на всі книги до кінця тижня!</p>
+            <div class="timer">Залишилось: <span id="ad-timer"></span> сек.</div>
+            <button id="close-ad-modal" class="btn tertiary" disabled>Закрити</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
